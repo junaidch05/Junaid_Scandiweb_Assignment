@@ -138,9 +138,6 @@ abstract function product();
 class Addproduct extends Product
 {
 
-    function error(){
-        echo '<script>document.getElementById("usernameError").textContent = "Username already exists";</script>';
-    }
  public function product(){
     require 'config.php';
     $sku = $this->getSKU();
@@ -199,9 +196,6 @@ class Showproduct extends Product{
         $this->getWeight();
     }
 }
-
-
- 
 
 ?>
 
